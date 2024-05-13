@@ -26,9 +26,9 @@
 PedSector _GL_ATTRIBUTE_CONST
 fat_min_cluster_size (FatType fat_type) {
 	switch (fat_type) {
-		case FAT_TYPE_FAT12: return 1;
-		case FAT_TYPE_FAT16: return 1024/512;
-		case FAT_TYPE_FAT32: return 4096/512;
+		case FAT_TYPE_FAT12: 
+		case FAT_TYPE_FAT16: 
+		case FAT_TYPE_FAT32: return 1;
 	}
 	return 0;
 }
